@@ -32,7 +32,7 @@ export default function Hero() {
               <h2 className="text-2xl md:text-3xl font-bold text-[#FF5252] animate-pulse">Hello, I'm</h2>
               <h1 className="text-5xl md:text-7xl font-black tracking-tighter">MOAKSH KAKKAR</h1>
               <p className="text-xl md:text-2xl font-medium text-gray-600 dark:text-gray-300">
-                AI Researcher & Deep Learning Engineer
+                Full Stack AI Engineer
               </p>
             </div>
 
