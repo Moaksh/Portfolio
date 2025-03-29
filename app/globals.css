@@ -2,8 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
-body{
-  cursor: none;
+body, a, button, div, input, textarea{
+  cursor: none !important;
 }
 
 @layer base {

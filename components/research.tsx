@@ -80,8 +80,8 @@ export default function Research() {
               className="bg-white dark:bg-gray-800 rounded-lg border-2 border-black overflow-hidden shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] cursor-pointer hover:shadow-none hover:translate-x-1 hover:translate-y-1 transition-all"
             >
               <div className="h-2" style={{ backgroundColor: item.color }}></div>
-              <div className="p-6">
-                <div className="flex items-start justify-between">
+              <div className="p-6 clickable">
+                <div className="flex items-start justify-between clickable">
                   <div>
                     <h3 className="text-xl font-bold">{item.title}</h3>
                     <div className="flex flex-wrap items-center gap-2 mt-2">

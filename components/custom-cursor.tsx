@@ -21,7 +21,11 @@ export default function CustomCursor() {
         target.tagName === "BUTTON" ||
         target.closest("button") ||
         target.closest("a") ||
-        target.classList.contains("clickable")
+        target.classList.contains("clickable")||
+        target.tagName === "INPUT" ||
+        target.closest("input") ||
+        target.tagName === "TEXTAREA" ||
+        target.closest("textarea")
       ) {
         setLinkHovered(true)
       } else {
