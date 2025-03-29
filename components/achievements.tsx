@@ -6,33 +6,39 @@ import { Award, BadgeIcon as Certificate } from "lucide-react"
 export default function Achievements() {
   const achievements = [
     {
-      title: "Certificate of Achievement",
-      description: "Fork-it Hackathon (2nd Position)",
+      title: "Fork-it Hackathon ",
+      description: "2nd Position",
       organization: "IIIT Delhi",
       icon: <Award className="h-6 w-6 text-[#FF5252]" />,
     },
     {
-      title: "Certificate of Achievement",
-      description: "Engineering Project Showcase 2023 (3rd Position)",
+      title: "Engineering Project Showcase 2023",
+      description: "3rd Position",
       organization: "Bennett University",
       icon: <Award className="h-6 w-6 text-[#FF5252]" />,
     },
     {
-      title: "Vice-President",
-      description: "Artificial Intelligence Society (AI club of BU)",
-      organization: "Bennett University",
+      title: "DeepLearning.AI TensorFlow Developer",
+      description: "Certification",
+      organization: "DeepLearning.AI",
       icon: <Certificate className="h-6 w-6 text-[#FF5252]" />,
     },
     {
-      title: "AI Expert",
-      description: "GDSC BU (Google Developer Student Club)",
-      organization: "Bennett University",
+      title: "Algorithmic Toolbox",
+      description: "Certification",
+      organization: "UC San Diego",
       icon: <Certificate className="h-6 w-6 text-[#FF5252]" />,
     },
     {
-      title: "Tech Head",
-      description: "ICosmic'22",
-      organization: "Bennett University",
+      title: "Fundamentals of Network Communication",
+      description: "Certification",
+      organization: "University of Colorado",
+      icon: <Certificate className="h-6 w-6 text-[#FF5252]" />,
+    },
+     {
+      title: "Introduction to Computers and Operating Systems and Security",
+      description: "Certification",
+      organization: "Microsoft",
       icon: <Certificate className="h-6 w-6 text-[#FF5252]" />,
     },
   ]

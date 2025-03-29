@@ -18,7 +18,7 @@ export default function Experience() {
         "Automated web scraping for Indian literature using Selenium, boosting efficiency by over 70%.",
         "Conducted in-depth research on Retrieval-Augmented Reasoning, exploring innovative methodologies to enhance information retrieval and reasoning capabilities in AI systems.",
       ],
-      technologies: ["Python", "PyTorch", "Tesseract", "Selenium", "GenAI", "LLM"],
+      technologies: ["Python", "PyTorch", "Tensorflow", "Selenium", "GenAI", "LLM","OpenAI","AWS","NextJS","Github"],
     },
     {
       title: "Academic Intern",

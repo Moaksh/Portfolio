@@ -219,7 +219,7 @@ export default function Contact() {
       <div className="mt-20 py-6 border-t border-gray-200 dark:border-gray-700">
         <div className="container mx-auto px-4 text-center">
           <p className="text-sm text-gray-500 dark:text-gray-400">
-            © {new Date().getFullYear()} Moaksh Kakkar. All rights reserved.
+            Made with ❤️ by Moaksh Kakkar  <br />  © {new Date().getFullYear() } All right reserved.
           </p>
         </div>
       </div>
