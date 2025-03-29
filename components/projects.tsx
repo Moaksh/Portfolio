@@ -9,18 +9,6 @@ export default function Projects() {
 
   const projects = [
     {
-      title: "Lip-sync",
-      period: "Sept 2023 - Dec 2023",
-      description: [
-        "Restructured a deep learning model to transcribe text from videos of individuals speaking, leveraging lip movements for improved accuracy.",
-        "Preprocessed video data using dlib and OpenCV to extract essential facial information necessary for the model.",
-        "Defined a neural network architecture that combines spatial pooling layers to capture spatial lip movements with LSTM layers to model temporal sequences.",
-      ],
-      technologies: ["Python", "TensorFlow", "StreamLit"],
-      github: "https://github.com/Moaksh/LipSync",
-      color: "#3B82F6",
-    },
-    {
       title: "On1y One",
       period: "Jan 2024 - March 2024",
       description: [
@@ -40,39 +28,45 @@ export default function Projects() {
       color: "#FF5252",
     },
     {
-      title: "AI Powered Chatbot",
-      period: "May 2023 - Aug 2023",
+      title: "Lip-sync",
+      period: "Sept 2023 - Dec 2023",
       description: [
-        "Engineered a sophisticated AI chatbot utilizing the OpenAI API, featuring personalized interactions and dynamic responses.",
-        "Implemented advanced natural language processing (NLP) techniques to ensure accurate and context-aware understanding of user inputs, resulting in more meaningful and relevant conversations.",
-        "Integrated the chatbot into a React web application, creating a seamless and intuitive user experience.",
+        "Restructured a deep learning model to transcribe text from videos of individuals speaking, leveraging lip movements for improved accuracy.",
+        "Preprocessed video data using dlib and OpenCV to extract essential facial information necessary for the model.",
+        "Defined a neural network architecture that combines spatial pooling layers to capture spatial lip movements with LSTM layers to model temporal sequences.",
       ],
-      technologies: ["React", "OpenAI API", "TailwindCSS", "JavaScript"],
-      link: "#",
-      github: "#",
+      technologies: ["Python", "TensorFlow", "StreamLit"],
+      github: "https://github.com/Moaksh/LipSync",
+      color: "#3B82F6",
+    },
+    {
+      title: "BennQA",
+      period: "Nov 2024 - Nov 2024",
+      description: [
+        "Developed a multi-knowledge chatbot utilizing Langchain to streamline access to university policies and protocols, enhancing user experience for students and staff.",
+        "	Implemented advanced natural language processing techniques to facilitate user queries, resulting in a significant reduction in response time for policy-related inquiries.",
+        "Designed and executed a user-friendly interface that enables seamless interaction with the chatbot, improving overall engagement and satisfaction among users.",
+      ],
+      technologies: ["Flask", "TailwindCSS", "VectorDB","LLM","LangChain"],
+      github: "https://github.com/Moaksh/BennQA/",
       color: "#4CAF50",
     },
     {
-      title: "E-commerce Website",
-      period: "Feb 2023 - April 2023",
+      title: "Pose-Detector",
+      period: "Jun 2023 - July 2023",
       description: [
-        "Developed a full-stack e-commerce website using the MERN stack (MongoDB, Express.js, React, Node.js) with a focus on scalability and maintainability.",
-        "Implemented user authentication and authorization using JWT (JSON Web Tokens) to ensure secure access to user data and prevent unauthorized access.",
-        "Designed and implemented a responsive user interface (UI) using React and Tailwind CSS, providing a seamless user experience across devices.",
+        "Evaluated and compared various computer vision frameworks, including MediaPipe and YOLO V7, and selected YOLO V7 for its superior performance and accuracy.",
+        "Explored the potential of custom keypoint detection using Detectron.",
+        "Leveraged the YOLO V7 object detection algorithm to train a model capable of real-time pose estimation like Sholder press, Chest press and more",
       ],
       technologies: [
-        "React",
-        "Node.js",
-        "MongoDB",
-        "TailwindCSS",
-        "Express.js",
-        "Flask",
-        "HTML",
-        "TailwindCSS",
+        "Python",
+        "YOLO V7",
+        "Streamlit",
+        "MediaPipe",
       ],
-      link: "#",
-      github: "#",
-      color: "#FF5252",
+      github: "https://github.com/Moaksh/Pose-detector",
+      color: "#FEDA5B",
     },
   
   ];

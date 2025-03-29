@@ -81,22 +81,42 @@ export default function About() {
       ),
     },
     {
-      id: "roles",
-      label: "Roles",
+      id: "Position of Responsibility",
+      label: "Position of Responsibility",
       icon: <Languages className="h-5 w-5" />,
       content: (
         <div className="space-y-4">
+           <div className="p-4 bg-white dark:bg-gray-800 border-2 border-black rounded-lg shadow-[4px_4px_0px_0px_rgba(0,0,0,1)]">
+            <h3 className="text-xl font-bold">Advisor</h3>
+            <p className="text-sm text-gray-500 dark:text-gray-400">Advaita (Music society of Bennett University)</p>
+            <p className="text-xs text-gray-500 dark:text-gray-400">Aug 2024 - Aug 2025</p>
+          </div>
           <div className="p-4 bg-white dark:bg-gray-800 border-2 border-black rounded-lg shadow-[4px_4px_0px_0px_rgba(0,0,0,1)]">
             <h3 className="text-xl font-bold">Vice-President</h3>
-            <p className="text-sm text-gray-500 dark:text-gray-400">Artificial Intelligence Society (AI club of BU)</p>
+            <p className="text-sm text-gray-500 dark:text-gray-400">Artificial Intelligence Society (AI society of Bennett University)</p>
+            <p className="text-xs text-gray-500 dark:text-gray-400">Aug 2023 - Aug 2024</p>
           </div>
           <div className="p-4 bg-white dark:bg-gray-800 border-2 border-black rounded-lg shadow-[4px_4px_0px_0px_rgba(0,0,0,1)]">
             <h3 className="text-xl font-bold">AI Expert</h3>
-            <p className="text-sm text-gray-500 dark:text-gray-400">GDSC BU (Google Developer Student Club)</p>
+            <p className="text-sm text-gray-500 dark:text-gray-400">GDSC BU (Google Developer Student Club, Bennett University)</p>
+            <p className="text-xs text-gray-500 dark:text-gray-400">Aug 2023 - Aug 2024</p>
+          </div>
+          <div className="p-4 bg-white dark:bg-gray-800 border-2 border-black rounded-lg shadow-[4px_4px_0px_0px_rgba(0,0,0,1)]">
+            <h3 className="text-xl font-bold">Ministry of Communication and Website </h3>
+            <p className="text-sm text-gray-500 dark:text-gray-400">School of CSET Bennett University, India</p>
+            <p className="text-xs text-gray-500 dark:text-gray-400">Jan 2023 - Jul 2023</p>
+          </div>
+    
+          <div className="p-4 bg-white dark:bg-gray-800 border-2 border-black rounded-lg shadow-[4px_4px_0px_0px_rgba(0,0,0,1)]">
+            <h3 className="text-xl font-bold">Organizing Commitiee</h3>
+            <p className="text-sm text-gray-500 dark:text-gray-400">Uphoria'25</p>
+            <p className="text-xs text-gray-500 dark:text-gray-400">2025</p>
           </div>
           <div className="p-4 bg-white dark:bg-gray-800 border-2 border-black rounded-lg shadow-[4px_4px_0px_0px_rgba(0,0,0,1)]">
             <h3 className="text-xl font-bold">Tech Head</h3>
             <p className="text-sm text-gray-500 dark:text-gray-400">ICosmic'22</p>
+            <p className="text-xs text-gray-500 dark:text-gray-400">2022</p>
+
           </div>
         </div>
       ),
