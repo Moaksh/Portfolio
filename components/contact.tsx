@@ -2,9 +2,10 @@
 
 import type React from "react";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { Github, Linkedin, Mail, Phone, Send } from "lucide-react";
+import emailjs from '@emailjs/browser';
 
 export default function Contact() {
   const [formData, setFormData] = useState({
@@ -15,6 +16,12 @@ export default function Contact() {
 
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitted, setSubmitted] = useState(false);
+  const [error, setError] = useState("");
+  
+  // Initialize EmailJS with your public key
+  useEffect(() => {
+    emailjs.init(process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY || ""); // Using environment variable for security
+  }, []);
 
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>,
@@ -26,18 +33,37 @@ export default function Contact() {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
+    setError("");
+    
+    // Prepare template parameters
+    const templateParams = {
+      from_name: formData.name,
+      from_email: formData.email,
+      message: formData.message,
+      to_email: "moakshkakar@gmail.com",
+    };
 
-    // Simulate form submission
-    setTimeout(() => {
+    // Send email using EmailJS
+    emailjs.send(
+      process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID || "", // Using environment variable for service ID
+      process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID || "", // Using environment variable for template ID
+      templateParams
+    )
+    .then(() => {
       setIsSubmitting(false);
       setSubmitted(true);
       setFormData({ name: "", email: "", message: "" });
-
+      
       // Reset success message after 3 seconds
       setTimeout(() => {
         setSubmitted(false);
       }, 3000);
-    }, 1500);
+    })
+    .catch((err) => {
+      console.error("Failed to send email:", err);
+      setIsSubmitting(false);
+      setError("Failed to send your message. Please try again later.");
+    });
   };
 
   return (
@@ -209,6 +235,16 @@ export default function Contact() {
                   className="p-3 bg-green-100 text-green-800 rounded-md text-center"
                 >
                   Your message has been sent successfully!
+                </motion.div>
+              )}
+              
+              {error && (
+                <motion.div
+                  initial={{ opacity: 0, y: 10 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  className="p-3 bg-red-100 text-red-800 rounded-md text-center"
+                >
+                  {error}
                 </motion.div>
               )}
             </form>

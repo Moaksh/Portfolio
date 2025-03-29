@@ -34,3 +34,25 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
+## Contact Form Setup
+
+To make the contact form work properly, you need to set up environment variables for EmailJS integration:
+
+1. Create a `.env.local` file in the root directory of your project
+2. Add the following environment variables to the file:
+
+```
+NEXT_PUBLIC_EMAILJS_SERVICE_ID=your_service_id_here
+NEXT_PUBLIC_EMAILJS_TEMPLATE_ID=your_template_id_here
+NEXT_PUBLIC_EMAILJS_PUBLIC_KEY=your_public_key_here
+```
+
+3. Replace the placeholder values with your actual EmailJS credentials
+
+### How to Get EmailJS Credentials
+
+1. Create an account at [EmailJS](https://www.emailjs.com/)
+2. Create an email service and note the Service ID
+3. Create an email template and note the Template ID
+4. Get your Public Key from Account > API Keys

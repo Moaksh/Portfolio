@@ -1,0 +1,40 @@
+# Setting Up EmailJS for Contact Form
+
+To make the contact form send emails to your personal email address, you need to set up EmailJS. Follow these steps:
+
+## 1. Create an EmailJS Account
+
+Go to [EmailJS](https://www.emailjs.com/) and sign up for a free account.
+
+## 2. Create an Email Service
+
+1. In your EmailJS dashboard, go to "Email Services" and click "Add New Service"
+2. Choose your email provider (Gmail, Outlook, etc.)
+3. Follow the instructions to connect your email account
+4. Note down the **Service ID** that is generated
+
+## 3. Create an Email Template
+
+1. Go to "Email Templates" and click "Create New Template"
+2. Design your email template. You can use these variables in your template:
+   - `{{from_name}}` - The name of the person who submitted the form
+   - `{{from_email}}` - The email of the person who submitted the form
+   - `{{message}}` - The message content
+   - `{{to_email}}` - Your email address
+3. Save the template and note down the **Template ID**
+
+## 4. Get Your Public Key
+
+1. Go to "Account" > "API Keys"
+2. Copy your **Public Key**
+
+## 5. Update Your Code
+
+Replace the placeholders in your code with the actual values:
+
+1. Open `components/contact.tsx`
+2. Replace `YOUR_EMAILJS_PUBLIC_KEY` with your actual Public Key
+3. Replace `YOUR_EMAILJS_SERVICE_ID` with your Service ID
+4. Replace `YOUR_EMAILJS_TEMPLATE_ID` with your Template ID
+
+That's it! Your contact form should now send emails to your personal email address when users submit the form.
