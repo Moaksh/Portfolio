@@ -3,7 +3,7 @@ export const RESUME_DATA = {
   contact: {
     email: "moakshkakar@gmail.com",
     phone: "+91 9560511269",
-    linkedin: "linkedin.com/MoakshKakkar",
+    linkedin: "linkedin.com/in/moaksh-kakkar/",
     github: "github.com/Moaksh",
   },
   education: [
