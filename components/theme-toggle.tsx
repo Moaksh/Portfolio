@@ -24,7 +24,7 @@ export function ThemeToggle() {
       variant="ghost" 
       size="icon" 
       onClick={toggleTheme}
-      className="border-2 border-transparent hover:border-[#FF5252] hover:bg-[#FF5252]/10 relative overflow-hidden"
+      className="border-2 border-transparent hover:border-[#FF5252] hover:bg-[#FF5252]/10 relative overflow-hidden bg-white dark:bg-gray-800 md:bg-transparent md:dark:bg-transparent"
     >
       <Sun 
         className="h-[1.2rem] w-[1.2rem] absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 transition-all duration-300 ease-in-out text-[#FF5252]"

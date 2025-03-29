@@ -96,7 +96,7 @@ export default function Navigation() {
                 {item.name}
               </a>
             ))}
-            <div className="mt-4">
+            <div className="mt-4 flex justify-center">
               <ThemeToggle />
             </div>
           </div>

@@ -37,20 +37,7 @@ export default function Hero() {
             </div>
 
             <div className="flex flex-wrap gap-3">
-              <a
-                href="tel:+919560511269"
-                className="flex items-center gap-2 px-4 py-2 bg-[#FF5252] text-white font-bold rounded-md border-2 border-black shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] hover:shadow-none hover:translate-x-1 hover:translate-y-1 transition-all"
-              >
-                <Phone className="h-4 w-4" />
-                +91 9560511269
-              </a>
-              <a
-                href="mailto:moakshkakar@gmail.com"
-                className="flex items-center gap-2 px-4 py-2 bg-white text-black font-bold rounded-md border-2 border-black shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] hover:shadow-none hover:translate-x-1 hover:translate-y-1 transition-all"
-              >
-                <Mail className="h-4 w-4" />
-                Email Me
-              </a>
+              
               <a
                 href="https://linkedin.com/MoakshKakkar"
                 target="_blank"

@@ -81,8 +81,8 @@ export default function About() {
       ),
     },
     {
-      id: "Position of Responsibility",
-      label: "Position of Responsibility",
+      id: "Roles",
+      label: "Roles",
       icon: <Languages className="h-5 w-5" />,
       content: (
         <div className="space-y-4">
