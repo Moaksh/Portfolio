@@ -62,7 +62,7 @@ export default function Research() {
   ]
 
   return (
-    <section id="research" className="py-20 bg-gray-100 dark:bg-gray-900">
+    <section id="research" className="py-20 bg-gray-100 dark:bg-transparent">
       <div className="max-w-6xl mx-auto px-4">
         <div className="mb-12 text-center">
           <h2 className="text-3xl md:text-5xl font-black tracking-tighter mb-4">

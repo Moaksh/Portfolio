@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react"
 import { Menu, X } from "lucide-react"
+import { ThemeToggle } from "./theme-toggle"
 
 export default function Navigation() {
   const [isOpen, setIsOpen] = useState(false)
@@ -54,6 +55,9 @@ export default function Navigation() {
                 {item.name}
               </a>
             ))}
+            <div className="ml-2">
+              <ThemeToggle />
+            </div>
           </div>
 
           <button
@@ -92,6 +96,9 @@ export default function Navigation() {
                 {item.name}
               </a>
             ))}
+            <div className="mt-4">
+              <ThemeToggle />
+            </div>
           </div>
         </div>
       </div>

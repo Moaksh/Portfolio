@@ -64,6 +64,7 @@ export default function Projects() {
         "YOLO V7",
         "Streamlit",
         "MediaPipe",
+
       ],
       github: "https://github.com/Moaksh/Pose-detector",
       color: "#FEDA5B",
