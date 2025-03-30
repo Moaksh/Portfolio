@@ -6,7 +6,7 @@ import { SpeedInsights } from "@vercel/speed-insights/next"
 export const metadata: Metadata = {
   title: "Moaksh Kakar",
   description:
-    "Moaksh Kakkar is a full-stack AI developer with a passion for creating innovative solutions.",
+    "Hi, I am Moaksh Kakkar, a dedicated individual with a relentless passion for learning and growth. Driven by curiosity and a thirst for knowledge, I approach every opportunity with enthusiasm and a commitment to excellence. With a solid foundation in programming languages and cutting-edge technologies, I thrive in dynamic environments where I can apply my skills to solve complex problems and drive innovation. My goal is to continuously expand my horizons, embrace challenges, and make a positive impact in the world of technology.",
 };
 
 export default function RootLayout({
