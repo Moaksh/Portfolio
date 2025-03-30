@@ -14,13 +14,13 @@ export default function About() {
       icon: <GraduationCap className="h-5 w-5" />,
       content: (
         <div className="space-y-4">
-          <div className="p-4 bg-white dark:bg-gray-800 border-2 border-black rounded-lg shadow-[4px_4px_0px_0px_rgba(0,0,0,1)]">
+          <div className="p-4 bg-white dark:bg-[#121212] border-2 border-black dark:border-white rounded-lg shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] dark:shadow-[4px_4px_0px_0px_rgba(255,255,255,1)]">
             <h3 className="text-xl font-bold">Bennett University</h3>
             <p className="text-sm text-gray-500 dark:text-gray-400">August 2022 - August 2026</p>
             <p className="mt-2">Bachelor Of Technology (Computer Science) | CGPA: 9.04</p>
             <p className="text-sm">Greater Noida, India</p>
           </div>
-          <div className="p-4 bg-white dark:bg-gray-800 border-2 border-black rounded-lg shadow-[4px_4px_0px_0px_rgba(0,0,0,1)]">
+          <div className="p-4 bg-white dark:bg-[#121212] border-2 border-black dark:border-white rounded-lg shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] dark:shadow-[4px_4px_0px_0px_rgba(255,255,255,1)]">
             <h3 className="text-xl font-bold">Delhi Public School, Rohini</h3>
             <p className="text-sm text-gray-500 dark:text-gray-400">March 2020 - July 2022</p>
             <p className="mt-2">Science | 10th: 82% — 12th: 85%</p>
@@ -41,7 +41,7 @@ export default function About() {
               {["Python", "C++", "HTML", "CSS", "JavaScript", "TypeScript", "SQL"].map((skill) => (
                 <span
                   key={skill}
-                  className="px-3 py-1 bg-[#FF5252] text-white font-medium rounded-md border-2 border-black"
+                  className="px-3 py-1 bg-[#FF5252] text-white font-medium rounded-md border-2 border-black dark:border-white"
                 >
                   {skill}
                 </span>
@@ -70,7 +70,7 @@ export default function About() {
               ].map((skill) => (
                 <span
                   key={skill}
-                  className="px-3 py-1 bg-white dark:bg-gray-800 text-black dark:text-white font-medium rounded-md border-2 border-black"
+                  className="px-3 py-1 bg-white dark:bg-[#121212] text-black dark:text-white font-medium rounded-md border-2 border-black dark:border-white"
                 >
                   {skill}
                 </span>
@@ -86,33 +86,33 @@ export default function About() {
       icon: <Languages className="h-5 w-5" />,
       content: (
         <div className="space-y-4">
-           <div className="p-4 bg-white dark:bg-gray-800 border-2 border-black rounded-lg shadow-[4px_4px_0px_0px_rgba(0,0,0,1)]">
+           <div className="p-4 bg-white dark:bg-[#121212] border-2 border-black dark:border-white rounded-lg shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] dark:shadow-[4px_4px_0px_0px_rgba(255,255,255,1)]">
             <h3 className="text-xl font-bold">Advisor</h3>
             <p className="text-sm text-gray-500 dark:text-gray-400">Advaita (Music society of Bennett University)</p>
             <p className="text-xs text-gray-500 dark:text-gray-400">Aug 2024 - Aug 2025</p>
           </div>
-          <div className="p-4 bg-white dark:bg-gray-800 border-2 border-black rounded-lg shadow-[4px_4px_0px_0px_rgba(0,0,0,1)]">
+          <div className="p-4 bg-white dark:bg-[#121212] border-2 border-black dark:border-white rounded-lg shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] dark:shadow-[4px_4px_0px_0px_rgba(255,255,255,1)]">
             <h3 className="text-xl font-bold">Vice-President</h3>
             <p className="text-sm text-gray-500 dark:text-gray-400">Artificial Intelligence Society (AI society of Bennett University)</p>
             <p className="text-xs text-gray-500 dark:text-gray-400">Aug 2023 - Aug 2024</p>
           </div>
-          <div className="p-4 bg-white dark:bg-gray-800 border-2 border-black rounded-lg shadow-[4px_4px_0px_0px_rgba(0,0,0,1)]">
+          <div className="p-4 bg-white dark:bg-[#121212] border-2 border-black dark:border-white rounded-lg shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] dark:shadow-[4px_4px_0px_0px_rgba(255,255,255,1)]">
             <h3 className="text-xl font-bold">AI Expert</h3>
             <p className="text-sm text-gray-500 dark:text-gray-400">GDSC BU (Google Developer Student Club, Bennett University)</p>
             <p className="text-xs text-gray-500 dark:text-gray-400">Aug 2023 - Aug 2024</p>
           </div>
-          <div className="p-4 bg-white dark:bg-gray-800 border-2 border-black rounded-lg shadow-[4px_4px_0px_0px_rgba(0,0,0,1)]">
+          <div className="p-4 bg-white dark:bg-[#121212] border-2 border-black dark:border-white rounded-lg shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] dark:shadow-[4px_4px_0px_0px_rgba(255,255,255,1)]">
             <h3 className="text-xl font-bold">Ministry of Communication and Website </h3>
             <p className="text-sm text-gray-500 dark:text-gray-400">School of CSET Bennett University, India</p>
             <p className="text-xs text-gray-500 dark:text-gray-400">Jan 2023 - Jul 2023</p>
           </div>
     
-          <div className="p-4 bg-white dark:bg-gray-800 border-2 border-black rounded-lg shadow-[4px_4px_0px_0px_rgba(0,0,0,1)]">
+          <div className="p-4 bg-white dark:bg-[#121212] border-2 border-black dark:border-white rounded-lg shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] dark:shadow-[4px_4px_0px_0px_rgba(255,255,255,1)]">
             <h3 className="text-xl font-bold">Organizing Commitiee</h3>
             <p className="text-sm text-gray-500 dark:text-gray-400">Uphoria'25</p>
             <p className="text-xs text-gray-500 dark:text-gray-400">2025</p>
           </div>
-          <div className="p-4 bg-white dark:bg-gray-800 border-2 border-black rounded-lg shadow-[4px_4px_0px_0px_rgba(0,0,0,1)]">
+          <div className="p-4 bg-white dark:bg-[#121212] border-2 border-black dark:border-white rounded-lg shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] dark:shadow-[4px_4px_0px_0px_rgba(255,255,255,1)]">
             <h3 className="text-xl font-bold">Tech Head</h3>
             <p className="text-sm text-gray-500 dark:text-gray-400">ICosmic'22</p>
             <p className="text-xs text-gray-500 dark:text-gray-400">2022</p>
@@ -139,10 +139,10 @@ export default function About() {
               <button
                 key={tab.id}
                 onClick={() => setActiveTab(tab.id)}
-                className={`px-4 py-2 flex items-center gap-2 font-bold rounded-md border-2 border-black transition-all ${
+                className={`px-4 py-2 flex items-center gap-2 font-bold rounded-md border-2 border-black dark:border-white transition-all ${
                   activeTab === tab.id
-                    ? "bg-[#FF5252] text-white shadow-[4px_4px_0px_0px_rgba(0,0,0,1)]"
-                    : "bg-white dark:bg-gray-800 hover:bg-gray-100 dark:hover:bg-gray-700"
+                    ? "bg-[#FF5252] text-white shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] dark:shadow-[4px_4px_0px_0px_rgba(255,255,255,1)]"
+                    : "bg-white dark:bg-[#121212] hover:bg-gray-100 dark:hover:bg-[#1a1a1a]"
                 }`}
               >
                 {tab.icon}
@@ -157,7 +157,7 @@ export default function About() {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -20 }}
             transition={{ duration: 0.3 }}
-            className="bg-gray-100 dark:bg-gray-900 p-6 rounded-lg border-2 border-black"
+            className="bg-gray-100 dark:bg-[#1a1a1a] p-6 rounded-lg border-2 border-black dark:border-white"
           >
             {tabs.find((tab) => tab.id === activeTab)?.content}
           </motion.div>

@@ -89,9 +89,9 @@ export default function Projects() {
               onMouseEnter={() => setHoveredProject(index)}
               onMouseLeave={() => setHoveredProject(null)}
               whileHover={{ y: -10 }}
-              className="relative bg-white dark:bg-gray-800 rounded-lg border-2 border-black overflow-hidden shadow-[8px_8px_0px_0px_rgba(0,0,0,1)]"
+              className="relative bg-white dark:bg-[#121212] rounded-lg border-2 border-black dark:border-white overflow-hidden shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] dark:shadow-[8px_8px_0px_0px_rgba(255,255,255,1)]"
               style={{
-                borderColor: hoveredProject === index ? project.color : "black",
+                borderColor: hoveredProject === index ? project.color : "currentColor"
               }}
             >
               <div
@@ -111,7 +111,7 @@ export default function Projects() {
                       href={project.github}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="p-2 bg-gray-100 dark:bg-gray-700 rounded-full hover:bg-gray-200 dark:hover:bg-gray-600 transition-colors"
+                      className="p-2 bg-gray-100 dark:bg-[#2b2b2b] rounded-full hover:bg-gray-200 dark:hover:bg-[#1a1a1a] transition-colors"
                     >
                       <Github className="h-5 w-5" />
                     </a>
@@ -138,7 +138,7 @@ export default function Projects() {
                     {project.technologies.map((tech) => (
                       <span
                         key={tech}
-                        className="px-3 py-1 text-xs bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-200 font-medium rounded-md border border-gray-300 dark:border-gray-600"
+                        className="px-3 py-1 text-xs bg-gray-100 dark:bg-[#121212] text-gray-800 dark:text-gray-200 font-medium rounded-md border border-gray-300 dark:border-gray-400"
                       >
                         {tech}
                       </span>

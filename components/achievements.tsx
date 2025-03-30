@@ -58,10 +58,10 @@ export default function Achievements() {
             <motion.div
               key={index}
               whileHover={{ y: -5 }}
-              className="bg-white dark:bg-gray-800 p-6 rounded-lg border-2 border-black shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] hover:shadow-none hover:translate-x-1 hover:translate-y-1 transition-all"
+              className="bg-white dark:bg-[#121212] p-6 rounded-lg border-2 border-black dark:border-white shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] dark:shadow-[4px_4px_0px_0px_rgba(255,255,255,1)] hover:shadow-none hover:translate-x-1 hover:translate-y-1 transition-all"
             >
               <div className="flex items-start space-x-4">
-                <div className="p-3 bg-gray-100 dark:bg-gray-700 rounded-lg">{achievement.icon}</div>
+                <div className="p-3 bg-gray-100 dark:bg-[#121212] rounded-lg">{achievement.icon}</div>
                 <div>
                   <h3 className="text-lg font-bold">{achievement.title}</h3>
                   <p className="text-sm text-gray-600 dark:text-gray-300">{achievement.description}</p>

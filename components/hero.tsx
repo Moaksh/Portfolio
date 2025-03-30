@@ -42,7 +42,7 @@ export default function Hero() {
                 href="https://linkedin.com/MoakshKakkar"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-2 px-4 py-2 bg-[#0077B5] text-white font-bold rounded-md border-2 border-black shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] hover:shadow-none hover:translate-x-1 hover:translate-y-1 transition-all"
+                className="flex items-center gap-2 px-4 py-2 bg-[#0077B5] text-white font-bold rounded-md border-2 border-black dark:border-white dark:shadow-white shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] hover:shadow-none hover:translate-x-1 hover:translate-y-1 transition-all"
               >
                 <Linkedin className="h-4 w-4" />
                 LinkedIn
@@ -51,7 +51,7 @@ export default function Hero() {
                 href="https://github.com/Moaksh"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-2 px-4 py-2 bg-[#333] text-white font-bold rounded-md border-2 border-black shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] hover:shadow-none hover:translate-x-1 hover:translate-y-1 transition-all"
+                className="flex items-center gap-2 px-4 py-2 bg-[#333] text-white font-bold rounded-md border-2 border-black dark:border-white dark:shadow-white shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] hover:shadow-none hover:translate-x-1 hover:translate-y-1 transition-all"
               >
                 <Github className="h-4 w-4" />
                 GitHub
@@ -61,19 +61,19 @@ export default function Hero() {
 
           <div className="relative h-[300px] md:h-[400px] lg:h-[500px] flex items-center justify-center">
             <div
-              className="absolute inset-0 bg-[#FF5252]/20 rounded-3xl border-4 border-black"
+              className="absolute inset-0 bg-[#FF5252]/20 rounded-3xl border-4 border-black dark:border-white"
               style={{
                 transform: `translate(${mousePosition.x * 20}px, ${mousePosition.y * 20}px)`,
               }}
             ></div>
             <div
-              className="absolute inset-4 bg-[#FF5252]/40 rounded-2xl border-4 border-black"
+              className="absolute inset-4 bg-[#FF5252]/40 rounded-2xl border-4 border-black dark:border-white"
               style={{
                 transform: `translate(${mousePosition.x * 30}px, ${mousePosition.y * 30}px)`,
               }}
             ></div>
             <div
-              className="absolute inset-8 bg-[#FF5252] rounded-xl border-4 border-black flex items-center justify-center overflow-hidden"
+              className="absolute inset-8 bg-[#FF5252] rounded-xl border-4 border-black dark:border-white flex items-center justify-center overflow-hidden"
               style={{
                 transform: `translate(${mousePosition.x * 40}px, ${mousePosition.y * 40}px)`,
               }}

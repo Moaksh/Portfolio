@@ -67,7 +67,7 @@ export default function Contact() {
   };
 
   return (
-    <section id="contact" className="py-20 bg-gray-100 dark:bg-transparent">
+    <section id="contact" className="py-20 bg-gray-100 dark:bg-[#121212]">
       <div className="max-w-6xl mx-auto px-4">
         <div className="mb-12 text-center">
           <h2 className="text-3xl md:text-5xl font-black tracking-tighter mb-4">
@@ -171,7 +171,7 @@ export default function Contact() {
                   value={formData.name}
                   onChange={handleChange}
                   required
-                  className="w-full px-4 py-3 bg-white dark:bg-gray-800 border-2 border-black rounded-md focus:outline-none focus:ring-2 focus:ring-[#FF5252] focus:border-transparent"
+                  className="w-full px-4 py-3 bg-white dark:bg-[#121212] border-2 border-black dark:border-white rounded-md focus:outline-none focus:ring-2 focus:ring-[#FF5252] focus:border-transparent"
                 />
               </div>
 
@@ -189,7 +189,7 @@ export default function Contact() {
                   value={formData.email}
                   onChange={handleChange}
                   required
-                  className="w-full px-4 py-3 bg-white dark:bg-gray-800 border-2 border-black rounded-md focus:outline-none focus:ring-2 focus:ring-[#FF5252] focus:border-transparent"
+                  className="w-full px-4 py-3 bg-white dark:bg-[#121212] border-2 border-black dark:border-white rounded-md focus:outline-none focus:ring-2 focus:ring-[#FF5252] focus:border-transparent"
                 />
               </div>
 
@@ -207,7 +207,7 @@ export default function Contact() {
                   onChange={handleChange}
                   required
                   rows={5}
-                  className="w-full px-4 py-3 bg-white dark:bg-gray-800 border-2 border-black rounded-md focus:outline-none focus:ring-2 focus:ring-[#FF5252] focus:border-transparent"
+                  className="w-full px-4 py-3 bg-white dark:bg-[#121212] border-2 border-black dark:border-white rounded-md focus:outline-none focus:ring-2 focus:ring-[#FF5252] focus:border-transparent"
                 ></textarea>
               </div>
 
@@ -216,7 +216,7 @@ export default function Contact() {
                 disabled={isSubmitting}
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                className="px-6 py-3 bg-[#FF5252] text-white font-bold rounded-md border-2 border-black shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] hover:shadow-none hover:translate-x-1 hover:translate-y-1 transition-all flex items-center justify-center space-x-2 w-full"
+                className="px-6 py-3 bg-[#FF5252] text-white font-bold rounded-md border-2 border-black dark:border-white shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] dark:shadow-[4px_4px_0px_0px_rgba(255,255,255,1)] hover:shadow-none hover:translate-x-1 hover:translate-y-1 transition-all flex items-center justify-center space-x-2 w-full"
               >
                 {isSubmitting ? (
                   <div className="h-5 w-5 border-2 border-white border-t-transparent rounded-full animate-spin"></div>

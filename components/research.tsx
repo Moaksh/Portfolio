@@ -62,7 +62,7 @@ export default function Research() {
   ]
 
   return (
-    <section id="research" className="py-20 bg-gray-100 dark:bg-transparent">
+    <section id="research" className="py-20 bg-gray-100 dark:bg-[#121212]">
       <div className="max-w-6xl mx-auto px-4">
         <div className="mb-12 text-center">
           <h2 className="text-3xl md:text-5xl font-black tracking-tighter mb-4">
@@ -77,7 +77,7 @@ export default function Research() {
               key={index}
               layoutId={`research-${index}`}
               onClick={() => setExpandedResearch(expandedResearch === index ? null : index)}
-              className="bg-white dark:bg-gray-800 rounded-lg border-2 border-black overflow-hidden shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] cursor-pointer hover:shadow-none hover:translate-x-1 hover:translate-y-1 transition-all"
+              className="bg-white dark:bg-[#121212] rounded-lg border-2 border-black dark:border-white overflow-hidden shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] dark:shadow-[4px_4px_0px_0px_rgba(255,255,255,1)] cursor-pointer hover:shadow-none hover:translate-x-1 hover:translate-y-1 transition-all"
             >
               <div className="h-2" style={{ backgroundColor: item.color }}></div>
               <div className="p-6 clickable">
