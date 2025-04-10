@@ -7,7 +7,6 @@ import Achievements from "@/components/achievements";
 import Contact from "@/components/contact";
 import CustomCursor from "@/components/custom-cursor";
 import Navigation from "@/components/navigation";
-import { Analytics } from "@vercel/analytics/react"
 
 export default function Home() {
   return (

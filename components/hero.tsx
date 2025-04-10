@@ -39,7 +39,7 @@ export default function Hero() {
             <div className="flex flex-wrap gap-3">
               
               <a
-                href="https://linkedin.com/MoakshKakkar"
+                href="https://www.linkedin.com/in/moaksh-kakkar/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-2 px-4 py-2 bg-[#0077B5] text-white font-bold rounded-md border-2 border-black dark:border-white dark:shadow-white shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] hover:shadow-none hover:translate-x-1 hover:translate-y-1 transition-all"
