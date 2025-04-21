@@ -77,7 +77,7 @@ export default function Research() {
               key={index}
               layoutId={`research-${index}`}
               onClick={() => setExpandedResearch(expandedResearch === index ? null : index)}
-              className="bg-white dark:bg-[#121212] rounded-lg border-2 border-black dark:border-white overflow-hidden shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] dark:shadow-[4px_4px_0px_0px_rgba(255,255,255,1)] cursor-pointer hover:shadow-none hover:translate-x-1 hover:translate-y-1 transition-all"
+              className="bg-transparent rounded-lg border-2 border-black dark:border-white overflow-hidden shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] dark:shadow-[4px_4px_0px_0px_rgba(255,255,255,1)] cursor-pointer hover:shadow-none hover:translate-x-1 hover:translate-y-1 transition-all"
             >
               <div className="h-2" style={{ backgroundColor: item.color }}></div>
               <div className="p-6 clickable">

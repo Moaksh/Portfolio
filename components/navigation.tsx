@@ -34,7 +34,7 @@ export default function Navigation() {
     <>
       <nav
         className={`fixed top-0 left-0 w-full z-40 transition-all duration-300 ${
-          scrolled ? "bg-white dark:bg-[#121212] shadow-md py-2" : "bg-transparent py-4"
+          scrolled ? "bg-[#ffdede] dark:bg-[#252020] shadow-md py-2" : "bg-transparent py-4"
         }`}
       >
         <div className="container mx-auto px-4 flex justify-between items-center">

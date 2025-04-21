@@ -36,7 +36,7 @@ export default function Experience() {
   ]
 
   return (
-    <section id="experience" className="py-20 bg-gray-100 dark:bg-[#121212]">
+    <section id="experience" className="py-20 bg-gray-100 dark:bg-[#121212] z-auto">
       <div className="max-w-6xl mx-auto px-4">
         <div className="mb-12 text-center">
           <h2 className="text-3xl md:text-5xl font-black tracking-tighter mb-4">
@@ -55,8 +55,8 @@ export default function Experience() {
                   className={`w-full text-left p-4 border-2 border-black dark:border-white rounded-lg transition-all ${
                     activeExperience === index
                       ? "bg-[#FF5252] text-white shadow-[4px_4px_0px_0px_rgba(0,0,0,1)]"
-                      : "bg-white dark:bg-[#121212] hover:bg-gray-100 dark:hover:bg-[#1a1a1a]"
-                  }`}
+                      : "bg-transparent dark:bg-transparent hover:bg-gray-100 dark:hover:bg-[#1a1a1a]"
+                    }`}
                 >
                   <h3 className="font-bold text-lg">{exp.company}</h3>
                   <p className="text-sm">{exp.title}</p>
@@ -71,7 +71,7 @@ export default function Experience() {
             animate={{ opacity: 1, x: 0 }}
             exit={{ opacity: 0, x: -20 }}
             transition={{ duration: 0.3 }}
-            className="md:col-span-2 bg-white dark:bg-[#121212] p-6 rounded-lg border-2 border-black dark:border-white shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] dark:shadow-[8px_8px_0px_0px_rgba(255,255,255,1)]"
+            className="md:col-span-2 bg-transparent dark:bg-transparent p-6 rounded-lg border-2 border-black dark:border-white shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] dark:shadow-[8px_8px_0px_0px_rgba(255,255,255,1)] "
           >
             <div className="mb-4">
               <h3 className="text-2xl font-bold">{experiences[activeExperience].title}</h3>
