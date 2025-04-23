@@ -89,7 +89,7 @@ export default function Projects() {
               onMouseEnter={() => setHoveredProject(index)}
               onMouseLeave={() => setHoveredProject(null)}
               whileHover={{ y: -10 }}
-              className="relative bg-transparent dark:bg-[#121212] rounded-lg border-2 border-black dark:border-white overflow-hidden shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] dark:shadow-[8px_8px_0px_0px_rgba(255,255,255,1)]"
+              className="relative bg-transparent rounded-lg border-2 border-black dark:border-white overflow-hidden shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] dark:shadow-[8px_8px_0px_0px_rgba(255,255,255,1)]"
               style={{
                 borderColor: hoveredProject === index ? project.color : "currentColor"
               }}
