@@ -71,7 +71,7 @@ export default function LoadingAnimation({ onComplete, minDisplayTime = 2000 }: 
   // Neo-brutalist loading animation with optimized animations
   return (
     <motion.div
-      className="fixed inset-0 bg-[#f5f5f5] dark:bg-[#121212] z-50 flex flex-col items-center justify-center will-change-transform"
+      className="fixed inset-0 bg-white dark:bg-[#121212] z-50 flex flex-col items-center justify-center will-change-transform"
       initial={{ opacity: 1 }}
       animate={controls}
       variants={{
@@ -91,7 +91,7 @@ export default function LoadingAnimation({ onComplete, minDisplayTime = 2000 }: 
             repeat: Number.POSITIVE_INFINITY,
           }}
         >
-          <div className="absolute top-0 left-0 w-16 h-16 bg-[#FF5252] border-2 border-black"></div>
+          <div className="absolute top-0 left-0 w-16 h-16 bg-[#FF5252] border-2 border-black dark:border-white"></div>
         </motion.div>
 
         <motion.div
@@ -104,7 +104,7 @@ export default function LoadingAnimation({ onComplete, minDisplayTime = 2000 }: 
             delay: 0.2,
           }}
         >
-          <div className="absolute top-0 right-0 w-16 h-16 bg-[#333] border-2 border-black"></div>
+          <div className="absolute top-0 right-0 w-16 h-16 bg-[#333] border-2 border-black dark:border-white"></div>
         </motion.div>
 
         <motion.div
@@ -117,7 +117,7 @@ export default function LoadingAnimation({ onComplete, minDisplayTime = 2000 }: 
             delay: 0.4,
           }}
         >
-          <div className="absolute bottom-0 right-0 w-16 h-16 bg-[#FF9E80] border-2 border-black"></div>
+          <div className="absolute bottom-0 right-0 w-16 h-16 bg-[#FF9E80] border-2 border-black dark:border-white"></div>
         </motion.div>
 
         <motion.div
@@ -130,7 +130,7 @@ export default function LoadingAnimation({ onComplete, minDisplayTime = 2000 }: 
             delay: 0.6,
           }}
         >
-          <div className="absolute bottom-0 left-0 w-16 h-16 bg-[#FF6E40] border-2 border-black"></div>
+          <div className="absolute bottom-0 left-0 w-16 h-16 bg-[#FF6E40] border-2 border-black dark:border-white"></div>
         </motion.div>
 
         {/* Center MK logo */}
@@ -147,7 +147,7 @@ export default function LoadingAnimation({ onComplete, minDisplayTime = 2000 }: 
       </div>
 
       {/* Progress bar */}
-      <div className="w-64 h-8 border-2 border-black bg-white dark:bg-black relative overflow-hidden">
+      <div className="w-64 h-8 border-2 border-black dark:border-white bg-white dark:bg-black relative overflow-hidden">
         <motion.div
           className="h-full bg-[#FF5252] will-change-transform"
           style={{ width: `${progress * 100}%` }}

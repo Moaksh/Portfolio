@@ -8,9 +8,7 @@ export default function EnhancedBackground() {
   const containerRef = useRef(null)
 
   // Get scroll progress with smoother values
-  const { scrollYProgress } = useScroll({
-    smooth: 0.2,
-  })
+  const { scrollYProgress } = useScroll()
 
   // Apply spring physics for even smoother animation
   const smoothScroll = useSpring(scrollYProgress, {
