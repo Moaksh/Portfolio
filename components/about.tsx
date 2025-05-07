@@ -5,7 +5,7 @@ import { motion } from "framer-motion"
 import { Code2, GraduationCap, Languages } from "lucide-react"
 
 export default function About() {
-  const [activeTab, setActiveTab] = useState("education")
+  const [activeTab, setActiveTab] = useState("skills")
 
   const tabs = [
     {

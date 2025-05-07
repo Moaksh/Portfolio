@@ -214,9 +214,10 @@ export default function Contact() {
               <motion.button
                 type="submit"
                 disabled={isSubmitting}
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-                className="px-6 py-3 bg-[#FF5252] text-white font-bold rounded-md border-2 border-black dark:border-white shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] dark:shadow-[4px_4px_0px_0px_rgba(255,255,255,1)] hover:shadow-none hover:translate-x-1 hover:translate-y-1 transition-all flex items-center justify-center space-x-2 w-full"
+                // whileHover={{ scale: 1.05 }}
+                // whileTap={{ scale: 0.95 }
+                className="flex space-x-2 w-full items-center justify-center gap-2 px-4 py-2 bg-[#FF5252] text-white font-bold rounded-md border-2 border-black dark:border-white dark:shadow-white shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] hover:shadow-none hover:translate-x-1 hover:translate-y-1 transition-all"
+
               >
                 {isSubmitting ? (
                   <div className="h-5 w-5 border-2 border-white border-t-transparent rounded-full animate-spin"></div>
